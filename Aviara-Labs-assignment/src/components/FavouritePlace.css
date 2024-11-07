@@ -1,0 +1,161 @@
+.favourite-place-dashboard {
+  /* background-color: #f4f7fb; */
+  padding: 20px;
+}
+
+.weather-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.current-weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 450px) {
+  .details-header {
+    flex-direction: column;
+  }
+  .unit-switch {
+    margin-top: 10px;
+  }
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.fv-switch {
+  margin-top: 20px;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.city-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2fa5ed;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #555;
+  text-align: center;
+}
+
+.weather-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.metric-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.metric-item span {
+  font-size: 1rem;
+}
+
+.forecast-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.forecast-item {
+  background-color: #f4f7fb;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forecast-item h5 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.temp-range {
+  font-weight: bold;
+  color: #2fa5ed;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .city-name {
+    font-size: 1.75rem;
+  }
+
+  .temperature {
+    font-size: 2.5rem;
+  }
+
+  .header-title,
+  .forecast-heading {
+    font-size: 1.25rem;
+  }
+
+  .metric-item span {
+    font-size: 0.875rem;
+  }
+}

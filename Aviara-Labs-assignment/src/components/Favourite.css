@@ -1,0 +1,104 @@
+.favourite-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  max-height: 80vh; /* Adjust this height as needed */
+  overflow-y: auto; /* Enable vertical scrolling for overflow */
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.favourite-container h2 {
+  color: #2fa5ed;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card {
+  background: linear-gradient(145deg, #e0f7ff, #a1d4f0);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  width: 250px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  color: #333;
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn:hover {
+  background-color: #ff3b3b;
+}
+
+.delete-btn:focus {
+  outline: none;
+  background-color: #ff1f1f;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .favourite-container h2 {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .delete-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    bottom: 10px;
+    right: 10px;
+  }
+}

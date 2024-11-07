@@ -1,0 +1,24 @@
+.main-navbar {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.links-route {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #2fa5ed;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+}
